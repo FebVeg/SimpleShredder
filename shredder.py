@@ -59,12 +59,14 @@ if os.name == "nt":
     if os.path.isdir(user_input):
         print("not yet implemented")
         sys.exit(0)
+        """
         print("Directory Tree found, using 'cipher' mode, this will make a long time but is better")
         cipher_mode = input("Continue? [y/n]: ")
         if cipher_mode == "y":
             os.system("cipher /W"+user_input)
         elif cipher_mode == "n":
             sys.exit(0)
+        """
 else: 
     print("Linux Detected")
     print("Shred a single file or an entire directory tree")
